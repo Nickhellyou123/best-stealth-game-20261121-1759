@@ -25,7 +25,21 @@
 - Gate self-check: game/ 10 files + 2 dirs, 66,997 bytes (≤993 / 48 MiB); index.html 844 bytes (≤1 MiB); 4 screenshots within size/dimension limits; no external references in game/ (no http strings at all).
 - Kit pre-submit check (`node cli/makefun.mjs check --kit . --repo .`, no transcripts): 4 passed (competition_open, snapshot 23 files / 297,913 bytes, license_osi MIT, entrypoint node22), 1 failed (transcripts_present — expected: the coordinator bundles the sessions and submits), 15 skipped, 5 checked at submission (repo_public, repo_owner via owner.json, repo_created_after_open, commit_in_repo, duplicate_snapshot — all satisfied by the pushed repo/commit above).
 
-## Submission — NOT SUBMITTED (coordinator submits)
+## Submission — SUBMITTED ✅ 2026-11-21T19:56:33Z (02:56 WIB 22 Nov)
 
-- No submission id, no claim code yet. The coordinator must bundle transcripts (this builder session 86ddbb54-5c36-44ae-89b4-10350c1eaaad + the parent/coordinator session) with `node cli/makefun.mjs bundle` from inside the kit, then submit before 2026-11-22T05:59:00Z. Bundle/check commands need the parent session — the builder session alone is not enough.
-- Quota/deadline were not re-checked by the builder at build time; the coordinator checks quota before submitting.
+- Submission id: 01a1ffae-94e5-7640-bf59-1232c1f68f74 (HTTP 202, title "The Quiet Gallery")
+- Submitted commit: 97722b1678990413f823edadae6ab4cb0d8b3920 (README badges fix on top of
+  builder commit bafba7fe26d14e8f9bfad3989b16f7497b6388b8)
+- Bundle: transcripts-stealth.tar.gz (1,375,692 bytes, sha256 34db4131421f947d80e3e3a4f52f7df8a5bf4607655184f247a5c53a3fe0ab0f)
+  — builder session 86ddbb54 (104 turns, 1 usage row) + coordinator session a5eaa571
+  (57 turns, 2 usage rows); pre-submit check 14 pass, 0 fail.
+  Coordinator fix before submit: README had no live make.fun badges (the same
+  refusal the awe entry hit) — added the three badge lines, new commit, re-bundled.
+- Quota at submit: can_submit true, 5 of 5 left today.
+- Entry status after submit: entries close 2026-11-22T05:59:00Z; result due 2026-12-06T17:59:00Z;
+  challenge window none.
+- Account entry_count after submit: 27 (was 26 after the awe submission).
+
+## Claim code
+
+- AF-B6KJB-0HRQ8-FH2GY-8C56F
